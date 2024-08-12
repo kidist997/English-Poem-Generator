@@ -7,28 +7,50 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI English poem generator</h1>
-    </header>
-    <main>
-      <form>
-        <input type="text" placeholder="Enter the topic of the poem" />
-        <input type="submit" />
-      </form>
-      <div>
-        The poem will go here
-        <br />
-        The poem will go here
-      </div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>AI English poem generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form>
+            <input
+              type="text"
+              placeholder="Enter the topic of the poem"
+              class="instructions"
+              autofocus
+              autocomplete="off"
+              required
+            />
+            <input type="submit" class="submit-button" />
+          </form>
 
-    <footer>
-      This AI project is coded by
-      <a href="https://github.com/kidist997">Kidist</a> and is open-sourced on
-      <a href="https://github.com/kidist997/English-Poem-Generator">Github</a>
-      and hosted on
-      <a href="https://english-poem-generator2341.netlify.app/">Netlify</a>
-    </footer>
+          <div class="hint">
+            The poem will go here
+            <br />
+            The poem will go here
+          </div>
+        </div>
+        <div class="poem hidden"></div>
+      </main>
+
+      <footer>
+        This AI project is coded by
+        <a href="https://github.com/kidist997" target="_blank">Kidist</a> and is
+        open-sourced on
+        <a
+          href="https://github.com/kidist997/English-Poem-Generator"
+          target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a
+          href="https://english-poem-generator2341.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
